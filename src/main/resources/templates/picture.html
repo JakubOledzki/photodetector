@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Photo</title>
+</head>
+<body>
+
+    <img th:src="${url}"/>
+
+    <table>
+        <tr th:each="model : ${modelList}">
+            <td>Name: <span th:text="${model.name()}"></span>, Value: <span th:text="${model.value()}"></span></td>
+        </tr>
+    </table>
+
+</body>
+</html>
